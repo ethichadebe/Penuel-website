@@ -19,11 +19,59 @@ nav ul li{
     display: inline-block;
     padding: 14px 30px;
     list-style: none;
-    margin: 5px 5px;
     font-size: 16px;
 }
 
 nav ul li:hover{
     background: white;
     color: black;
+    transition: 0.5s;
+}
+
+.menu-icon{
+    display: none;
+}
+
+/*-------------- Media query --------------*/
+@media (max-width: 1000px) {
+    .logo{
+        width: 140px;
+    }
+    
+    nav ul li{
+        padding: 10px 20px;
+    }    
+}
+
+@media (max-width: 840px) {
+    nav{
+        padding:  15px 0;
+    }
+
+    nav ul{
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background: black;
+        z-index: -1;
+        width: 200px;
+        padding-top: 70px;
+        transition: 0.5s;
+    }
+
+    nav ul li{
+        display: block;
+        padding: 25px 40px;
+    }
+
+    .menu-icon{
+        display: block;
+        width: 30px;
+        cursor: pointer;
+    }  
+    
+    .hide-nav-menu{
+        right: -200px;
+    }
 }

@@ -14,6 +14,7 @@
 
 .item{
     flex-basis: 31%;
+    align-items: center;
 }
 
 .info{
@@ -43,3 +44,22 @@
     margin-top: 20px;
 } 
 
+/*-------------- Media query --------------*/
+@media (max-width: 650px) {
+    .items{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+
+    .item img{
+        margin-top: 20px;
+        width: 100%;
+    }
+
+
+    .item{
+        flex-basis: 100%;
+    }
+}

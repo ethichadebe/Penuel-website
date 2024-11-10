@@ -46,3 +46,11 @@ a{
     border: 0;
     outline: 0;
 }
+
+/*-------------- Media query --------------*/
+@media (max-width: 1200px) {
+    .container{
+        padding-left: 5%;
+        padding-right: 5%;
+    }    
+}
