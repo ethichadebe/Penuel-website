@@ -35,3 +35,14 @@
 .about p{
     margin-bottom: 15px;
 }
+
+/*-------------- Media query --------------*/
+@media (max-width: 650px) {
+    .about-left{
+        display: none;
+    }
+
+    .about-right{
+        flex-basis: 106%;
+    }    
+}
