@@ -61,5 +61,7 @@
 
     .item{
         flex-basis: 100%;
+        width: 90%;
+        margin-top: 10%;
     }
 }
