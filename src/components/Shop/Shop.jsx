@@ -38,7 +38,6 @@ const Shop = () => {
         <img src={perenting_with_penuel} alt="lives" />
         <div className='info'>
           <h3>Parenting with Penuel</h3><p>Ey... Fuck them kids | <br/>Penuel Mlotshwa</p>
-
           <h3>R50 eBook | R100 Hard copy</h3>
           <button className='btn read-more'>Read more</button>
         </div>
