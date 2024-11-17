@@ -1,0 +1,54 @@
+.book{
+    margin: 100px auto;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    width: 90%;
+    color: white;
+}
+
+.book-left{
+    width: 100%;
+    margin: 10%;
+
+}
+
+.book-right{
+    width: 100%;
+}
+
+.book-img{
+    width: 100%;
+}
+
+.book h4{
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.book h2{
+    font-size: 35px;
+    margin: 10px 0;
+    max-width: 400px;
+}
+
+.book h3{
+    font-size: 24px;
+    margin: 10px 0;
+    max-width: 400px;
+}
+
+.book p{
+    margin-bottom: 15px;
+}
+
+/*-------------- Media query --------------*/
+@media (max-width: 650px) {
+    .book-left{
+        display: none;
+    }
+
+    .book-right{
+        flex-basis: 106%;
+    }    
+}
