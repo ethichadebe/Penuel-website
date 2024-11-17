@@ -16,11 +16,10 @@ nav{
 }
 
 nav ul li{
-    width: 100px;
     display: inline-block;
+    padding: 20px 35px;
     list-style: none;
     font-size: 16px;
-    text-align:  center;
 }
 
 nav ul li:hover{
@@ -40,6 +39,7 @@ nav ul li:hover{
     }
     
     nav ul li{
+        padding: 10px 20px;
     }    
 }
 
@@ -63,6 +63,7 @@ nav ul li:hover{
     nav ul li{
         width: 100%;
         display: block;
+        padding: 25px 40px;
     }
 
     .menu-icon{

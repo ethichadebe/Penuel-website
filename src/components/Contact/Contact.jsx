@@ -7,12 +7,12 @@ import { faYoutube, faXTwitter, faFacebookF, faInstagram, faTiktok } from '@fort
 const Contact = () => {
   return (
     <div className='icons'>
-      <FontAwesomeIcon icon={faYoutube} className='icon'/>
-      <FontAwesomeIcon icon={faInstagram} className='icon'/>
-      <FontAwesomeIcon icon={faFacebookF} className='icon'/>
-      <FontAwesomeIcon icon={faXTwitter} className='icon'/>
-      <FontAwesomeIcon icon={faTiktok} className='icon'/>
-      <FontAwesomeIcon icon={faEnvelope} className='icon'/>
+      <a href="https://www.youtube.com/@Penuelism"  target="_blank"><FontAwesomeIcon icon={faYoutube} className='icon'/></a>
+      <a href="https://www.instagram.com/godpenuel/"  target="_blank"><FontAwesomeIcon icon={faInstagram} className='icon'/></a>
+      <a href="https://www.facebook.com/penuelism/"  target="_blank"><FontAwesomeIcon icon={faFacebookF} className='icon'/></a>
+      <a href="https://x.com/godpenuel"  target="_blank"><FontAwesomeIcon icon={faXTwitter} className='icon'/></a>
+      <a href="https://www.tiktok.com/@godpenuel"  target="_blank"><FontAwesomeIcon icon={faTiktok} className='icon'/></a>
+      <a href="mailto:penuelism100@gmail.com"  target="_blank"><FontAwesomeIcon icon={faEnvelope} className='icon'/></a>
     </div>
   )
 }

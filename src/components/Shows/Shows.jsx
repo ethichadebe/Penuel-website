@@ -11,8 +11,8 @@ const Shows = () => {
       <div className="program">
         <img src={dope_convo} alt="dope_convo" />
         <div className='caption'>
-          <h2>The Konvo Show</h2>
-          <p>The Konvo Show, hosted by God Penuel, covers current issues, finance, and relationships with guest insights, offering fresh perspectives, read more...</p>
+          <h2>DOPE CONVERSATIONS</h2>
+          <p>DOPE CONVERSATIONS with Penuel is a YouTube show where Penuel The Black Pen hosts open, thought-provoking discussions on social issues, personal growth, and current affairs with diverse guests.</p>
         </div>
       </div>
       <div className="program">
@@ -25,8 +25,8 @@ const Shows = () => {
       <div className="program">
         <img src={lives} alt="lives" />
         <div className='caption'>
-          <h2>The Konvo Show</h2>
-          <p>The Konvo Show, hosted by God Penuel, covers current issues, finance, and relationships with guest insights, offering fresh perspectives, read more...</p>
+          <h2>Youtube lives</h2>
+          <p>Youtubbe live videos where Penuel The Black Pen dives into candid discussions on society, philosophy, and personal beliefs. These sessions often explore deep, sometimes controversial topics, encouraging open-minded dialogue and diverse perspectives.</p>
         </div>
      </div>
 
