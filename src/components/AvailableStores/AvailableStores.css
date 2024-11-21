@@ -23,6 +23,7 @@
 
 .external_link{
      position: absolute;
+     border-radius: 10px;
      top: 0;
      left: 70%;
      bottom: 0;

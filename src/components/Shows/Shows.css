@@ -18,6 +18,10 @@
     margin-top: 20px;
 }
 
+.read-more:hover{
+    color: white;
+}
+
 .program p{
     margin-top: 10px;
 }
@@ -27,6 +31,12 @@
     position: relative;
 }
 
+.program .caption{
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
+}
+
 .caption{
      border-radius: 10px;
      position: absolute;
@@ -34,7 +44,7 @@
      left: 0;
      bottom: 0;
      right: 0;
-     background: rgba(0, 0, 0, 0.8);
+     background: rgba(0, 0, 0, 0.5);
      display: flex;
      flex-direction: column;
      color: white;
@@ -50,6 +60,7 @@
 } 
 
 .program:hover .caption{
+    visibility: visible;
     opacity: 1;
     padding-top: 0%;
 }

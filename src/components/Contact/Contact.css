@@ -1,9 +1,13 @@
 .icons{
     width: 100%;
     display: flex;
-    color: white;
     text-align: center;
     justify-content: center;
+    color: white;
+}
+
+.icons a{
+    transition: 0.5s;
 }
 
 .icon{
@@ -14,9 +18,17 @@
     display: block;
 }
 
+.icons a:hover{
+    color: black;
+    background-color: white;
+}
+
 /*-------------- Media query --------------*/
 @media (max-width: 650px) {
     .icon{
-        margin: 0 10px;
+        width: 35px;
+        height: 35px;
+        padding: 0 10px;
+        margin: 0;
     }
 }
