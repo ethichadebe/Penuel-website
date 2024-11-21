@@ -39,6 +39,11 @@
     align-items: center;
 }
 
+.external_link:hover{
+    background: #730206;
+    color: white;
+}
+
 .external_link a{
     width: 25px;
     height: 25px;

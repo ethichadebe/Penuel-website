@@ -24,7 +24,7 @@ a{
     padding-right: 10%;
 }
 
-.read-more{
+.btn{
     background: white;
     color: black;
     width: 70%;
@@ -38,10 +38,9 @@ a{
     text-align: center;
 }
 
-.read-more:hover{
+.btn:hover{
     background: #730206;
-    border-style: solid;
-    border: 1em;
+    color: white;
 }
 /*-------------- Media query --------------*/
 @media (max-width: 1200px) {

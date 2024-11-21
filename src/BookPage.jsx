@@ -10,6 +10,7 @@ const App = () => {
   return (
     <div>
       <div className='container'>
+        <Navbar/>
         <Book/>
         <Title subTitle="" title="Also available from"/>
         <AvailableStores/>

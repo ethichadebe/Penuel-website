@@ -18,10 +18,12 @@ const Shows = () => {
     <div className='stores'>
       {shops.map((shops) => (
         <div className="store">
-          <img src={shops.image} alt="dope_convo" />
-          <div className='external_link'>
-            <Link to={shops.link} target="_blank" ><FontAwesomeIcon icon={faArrowUpRightFromSquare} className='cart-icon'/></Link>
-          </div>
+          <Link to={shops.link} target="_blank" >
+            <img src={shops.image} alt="dope_convo" />
+            <div className='external_link'>
+              <FontAwesomeIcon icon={faArrowUpRightFromSquare} className='cart-icon'/>
+            </div>
+          </Link>
         </div>
       ))}
     </div>
