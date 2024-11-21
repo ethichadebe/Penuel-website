@@ -5,7 +5,7 @@ import loot from "../../assets/book_stores/loot_logo.svg"
 import takealot_logo from "../../assets/book_stores/takealot_logo.svg"
 import amazon_logo from "../../assets/book_stores/amazon_logo.svg"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faShop } from '@fortawesome/free-solid-svg-icons'
+import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons'
 
 const Shows = () => {
   const [shops, setShops] = useState([{image: loot,
@@ -20,7 +20,7 @@ const Shows = () => {
         <div className="store">
           <img src={shops.image} alt="dope_convo" />
           <div className='external_link'>
-            <Link to={shops.link} target="_blank" ><FontAwesomeIcon icon={faShop} className='cart-icon'/></Link>
+            <Link to={shops.link} target="_blank" ><FontAwesomeIcon icon={faArrowUpRightFromSquare} className='cart-icon'/></Link>
           </div>
         </div>
       ))}

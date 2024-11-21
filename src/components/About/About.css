@@ -9,11 +9,11 @@
 
 .about-left{
     flex-basis: 40%;
-
 }
 
 .about-right{
-    flex-basis: 56%;
+    margin-left: 20px;
+    flex-basis: 100%;
 }
 
 .about-img{
@@ -33,13 +33,27 @@
 }
 
 .about p{
-    margin-bottom: 15px;
+    margin-bottom: 40px;
 }
 
 /*-------------- Media query --------------*/
+@media (max-width: 1000px) {
+    .about-img{
+        width: 50%;
+        border-radius: 50%;
+    }    
+}
+/*-------------- Media query --------------*/
 @media (max-width: 650px) {
-    .about-left{
-        display: none;
+    .about{
+        flex-direction: column;
+    }        
+    
+    .about-left img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
     }
 
     .about-right{

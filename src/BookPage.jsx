@@ -9,7 +9,6 @@ import Footer from './components/Footer/Footer'
 const App = () => {
   return (
     <div>
-      <Navbar/>
       <div className='container'>
         <Book/>
         <Title subTitle="" title="Also available from"/>

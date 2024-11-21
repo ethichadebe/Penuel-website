@@ -31,10 +31,11 @@ const Shop = () => {
                                         author:"Ey... Fuck them kids | \nPenuel Mlotshwa",
                                         price:"R50 eBook | R100 Hard copy",
                                         synopsis:""}])
+
   return (
     <div className='items'>
       {books.map((book)=>(
-        <div className="item">
+        <div className="item" >
           <img src={book.image} alt={book.id} />
           <div className='info'>
             <h3>{book.title}</h3>

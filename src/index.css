@@ -24,18 +24,7 @@ a{
     padding-right: 10%;
 }
 
-.btn{
-    background: white;
-    color: black;
-    padding: 14px 25px;
-    font-size: 16px;
-    border-radius: 30px;
-    cursor: pointer;
-    border: 0;
-    outline: 0;
-}
-
-.btn.read-more{
+.read-more{
     background: white;
     color: black;
     width: 70%;
@@ -49,6 +38,11 @@ a{
     text-align: center;
 }
 
+.read-more:hover{
+    background: #730206;
+    border-style: solid;
+    border: 1em;
+}
 /*-------------- Media query --------------*/
 @media (max-width: 1200px) {
     .container{

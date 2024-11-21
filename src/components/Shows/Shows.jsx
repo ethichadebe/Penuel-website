@@ -21,7 +21,7 @@ const Shows = () => {
       <div className="program">
         <img src={the_koonvo_show} alt="the_koonvo_show" />
         <div className='caption'>
-          <Link to="https://www.youtube.com/@konvo_za" className='read-more'>
+          <Link to="https://www.youtube.com/@konvo_za" target='_blank' className='read-more'>
             <h2>The Konvo Show</h2>
             <p>The Konvo Show, hosted by God Penuel, covers current issues, finance, and relationships with guest insights, offering fresh perspectives,
             </p>
