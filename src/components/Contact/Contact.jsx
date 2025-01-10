@@ -6,17 +6,17 @@ import { faYoutube, faXTwitter, faFacebookF, faInstagram, faTiktok } from '@fort
 
 const Episodes = () => {
   const [social_media] = useState([{icon: faYoutube,
-                                  link:"https://www.youtube.com/@Penuelism"},
+                                  link:"#"},
                                 {icon: faInstagram,
-                                link: "https://www.instagram.com/godpenuel/"},
+                                link: "#"},
                                 {icon: faFacebookF,
-                                link: "https://www.facebook.com/penuelism/"},
+                                link: "#"},
                                 {icon: faXTwitter,
-                                link: "https://x.com/godpenuel"},
+                                link: "#"},
                                 {icon: faTiktok,
-                                link: "https://www.tiktok.com/@godpenuel"},
+                                link: "#"},
                                 {icon: faEnvelope,
-                                link: "mailto:penuelism100@gmail.com"}])
+                                link: "#"}])
   return (
     <div className='icons'>
       {social_media.map((social_media) =>(

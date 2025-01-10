@@ -1,6 +1,6 @@
 .stores{
     text-align:center;
-    margin: 0 auto;
+    margin: 10px auto;
     width: 90%;
     display: flex;
     align-items: center;
@@ -9,7 +9,7 @@
 
 .store img{
     margin: auto;
-    width: 200px;
+    width: 150px;
     height: 70px;
     border-radius: 10px;
     display: block;
@@ -21,6 +21,10 @@
     position: relative;
 }
 
+.store:hover{
+    background: white;
+
+}
 .external_link{
      position: absolute;
      border-radius: 10px;

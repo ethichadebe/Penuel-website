@@ -1,6 +1,6 @@
 nav{
     width: 100%;
-    background-color: #0000006b;
+    background-color: #00000000;
     color: #fff;
     position: fixed;
     top: 0;
@@ -12,19 +12,21 @@ nav{
 }
 
 .logo{
-    width: 180px;
+    width: 50px;
+    margin: 25px 0px;
 }
 
 nav ul li{
     display: inline-block;
     padding: 20px 35px;
-    list-style: none;
-    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
 }
 
 nav ul li:hover{
-    background: white;
-    color: black;
+    color: #61BC21;
     transition: 0.5s;
 }
 
@@ -35,7 +37,8 @@ nav ul li:hover{
 /*-------------- Media query --------------*/
 @media (max-width: 1000px) {
     .logo{
-        width: 140px;
+        width: 50px;
+        margin: 25px 0px;
     }
     
     nav ul li{

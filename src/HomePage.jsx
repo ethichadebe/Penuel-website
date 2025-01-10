@@ -1,5 +1,5 @@
 import React from 'react'
-import Navbar from './components/Navbar/Navbar'
+import NavbarSroll from './components/NavbarScroll/NavbarSroll'
 import Hero from './components/Hero/Hero'
 import Shows from './components/Shows/Shows'
 import Title from './components/Title/Title'
@@ -11,17 +11,16 @@ import Footer from './components/Footer/Footer'
 const App = () => {
   return (
     <div>
-      <Navbar/>
+      <NavbarSroll/>
       <Hero/>
       <div className='container'>
-        <Title subTitle="YouTube" title="Shows"/>
-        <Shows/>
         <About/>
-        <Title subTitle="Merch" title="Shop"/>
-        <Shop/>
-        <Title subTitle="Get in touch" title="Contact"/>
-        <Contact/>
-        <Footer/>
+        </div>
+        <Shows/>
+        <div className='container'>
+          <Title subTitle="Get in touch" title="Contact"/>
+          <Contact/>
+          <Footer/>
       </div>
     </div>
   )

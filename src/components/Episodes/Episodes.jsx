@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { useParams, useLocation } from 'react-router-dom'
 import './Episodes.css'
-import penuel_bw from "../../assets/penuel_img.jpg"
+import penuel_bw from "../../assets/about.png"
 
 const Episodes = () => {
   const [social_media] = useState([{thumbnail: "",

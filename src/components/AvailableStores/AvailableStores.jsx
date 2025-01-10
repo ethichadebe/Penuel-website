@@ -20,9 +20,9 @@ const Shows = () => {
         <div className="store">
           <Link to={shops.link} target="_blank" >
             <img src={shops.image} alt="dope_convo" />
-            <div className='external_link'>
+            {/*<div className='external_link'>
               <FontAwesomeIcon icon={faArrowUpRightFromSquare} className='cart-icon'/>
-            </div>
+      </div>*/}
           </Link>
         </div>
       ))}
