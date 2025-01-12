@@ -1,81 +1,228 @@
-nav{
-    width: 100%;
-    background-color: #00000000;
-    color: #fff;
-    position: fixed;
-    top: 0;
-    left: 0;
+/* General Navbar Styles */
+.navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    z-index: 10;
-}
-
-.logo{
-    width: 50px;
-    margin: 25px 0px;
-}
-
-nav ul li{
-    display: inline-block;
-    padding: 20px 35px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 18px;
-}
-
-nav ul li:hover{
-    color: #61BC21;
-    transition: 0.5s;
-}
-
-.menu-icon{
+    padding: 0 20px;
+    background-color: #00000030;
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .navbar-logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    height: 50px;
+    width: auto;
+  }
+  
+  /* Desktop Menu */
+  .navbar-menu.desktop-menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex: 1;
+  }
+  
+  .navbar-item {
+    margin: 0 15px;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+  }
+  
+  .navbar-item:hover {
+    text-decoration: underline;
+  }
+  
+  /* Mail Icon (Always Visible) */
+  .navbar-mail {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .mail-icon {
+    height: 75px;
+    width: 75px;
+    margin: 10px;
+  }
+  
+  .mail-icon:hover {
+    opacity: 0.8;
+  }
+  
+  /* Mobile Menu */
+  .mobile-options {
     display: none;
-}
-
-/*-------------- Media query --------------*/
-@media (max-width: 1000px) {
-    .logo{
-        width: 50px;
-        margin: 25px 0px;
+  }
+  
+  .mobile-menu {
+    display: none;
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    background-color: #000000;
+    transition: top 0.3s ease;
+    z-index: 900;
+  }
+  
+  .mobile-menu.active {
+    top: 90px; /* Adjust based on navbar height */
+  }
+  
+  .mobile-menu-list {
+    list-style: none;
+    padding: 20px 0;
+    margin: 0;
+    text-align: center;
+  }
+  
+  .mobile-menu-list .navbar-item {
+    margin: 15px 0;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  /* Burger Menu */
+  .burger-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 20px;
+    width: 25px;
+    cursor: pointer;
+  }
+  
+  .burger-menu .line {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .burger-menu .line.open:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  
+  .burger-menu .line.open:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .burger-menu .line.open:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  
+/* Popup Sliding from the Right */
+.popup {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100%;
+    width: 400px;
+    background: white;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
+    transition: right 0.3s ease-in-out;
+    z-index: 2000;
+  }
+  
+  .popup.active {
+    right: 0;
+  }
+  
+  .popup-content {
+    padding: 20px;
+  }
+  
+  .popup-content h2 {
+    margin: 0 0 20px 0;
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+  }
+  
+  .popup-content .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .popup-content label {
+    display: block;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 5px;
+  }
+  
+  .popup-content input,
+  .popup-content textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .popup-content textarea {
+    resize: none;
+    height: 100px;
+  }
+  
+  .popup-content .submit-btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #333;
+    color: white;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .popup-content .submit-btn:hover {
+    background-color: #555;
+  }
+  
+  .close-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+    color: #333;
+  }
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .desktop-menu {
+      display: none;
     }
-    
-    nav ul li{
-        padding: 10px 20px;
-    }    
-}
-
-@media (max-width: 840px) {
-    nav{
-        padding:  15px 0;
+  
+    .mobile-options {
+      display: flex;
     }
-
-    nav ul{
-        position: fixed;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        background: black;
-        z-index: -1;
-        width: 200px;
-        padding-top: 70px;
-        transition: 0.5s;
+  
+    .mobile-menu {
+      display: block;
     }
-
-    nav ul li{
-        width: 100%;
-        display: block;
-        padding: 25px 40px;
+  }
+  
+  @media (min-width: 769px) {
+    .mobile-options {
+      display: none;
     }
-
-    .menu-icon{
-        display: block;
-        width: 30px;
-        cursor: pointer;
-    }  
-    
-    .hide-nav-menu{
-        right: -200px;
+  
+    .desktop-menu {
+      display: flex;
     }
-}
+  }
+  

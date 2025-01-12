@@ -1,5 +1,5 @@
 import React from 'react'
-import NavbarSroll from './components/NavbarScroll/NavbarSroll'
+import Navbar from './components/Navbar/Navbar'
 import Hero from './components/Hero/Hero'
 import Shows from './components/Shows/Shows'
 import Title from './components/Title/Title'
@@ -11,7 +11,7 @@ import Footer from './components/Footer/Footer'
 const App = () => {
   return (
     <div>
-      <NavbarSroll/>
+      <Navbar/>
       <Hero/>
       <div className='container'>
         <About/>
